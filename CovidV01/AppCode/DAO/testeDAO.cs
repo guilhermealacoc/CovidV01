@@ -27,7 +27,7 @@ namespace CovidV01.AppCode.DAO
 
                 cmd = conn.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "SELECT idTeste,nome FROM Teste ";
+                cmd.CommandText = "SELECT idTeste,nomeTeste FROM Teste ";
 
                 List<teste> listTeste = new List<teste>();
                 dr = cmd.ExecuteReader();
